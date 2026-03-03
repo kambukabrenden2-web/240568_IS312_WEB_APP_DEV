@@ -1,0 +1,75 @@
+/* Author: Brenden | Date: 08 March 2024 | IS312 Lab 1 */
+/* External CSS for Diwai Bank Ltd interface */
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: green;   /* Green header */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Navigation Bar */
+nav ul {
+  display: flex;
+  list-style: none;          /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  background-color: yellow;  /* Yellow navigation bar */
+}
+
+nav ul li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+/* Grey background for Personal Banking */
+nav ul li.grey-bg {
+  background-color: #d3d3d3;
+}
+
+/* Grid Layout for main content */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Two columns: Transfer Money + Dashboard */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Transfer Money section */
+.transfer-money {
+  background-color: white;   /* White background */
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.transfer-money ul {
+  list-style: none;          /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.transfer-money ul li {
+  padding: 0.5rem 0;
+}
+
+/* Dashboard section */
+.dashboard {
+  background-color: white;   /* White background */
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: grey;    /* Grey footer */
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
