@@ -1,0 +1,51 @@
+<!-- 
+Author: Brenden Kambuka
+Date: 13th March 2026
+Unit: IS312 Web Application Development
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add New Program</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function validateForm() {
+            var code = document.forms["programForm"]["ProgramCode"].value;
+            var name = document.forms["programForm"]["ProgramName"].value;
+            var duration = document.forms["programForm"]["Duration"].value;
+            if (code == "" || name == "" || duration == "") {
+                alert("All fields must be filled out!");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    Add New Program
+</header>
+
+<form name="programForm" action="add-new-program.php" method="POST" onsubmit="return validateForm()">
+    <label>Program Code:</label>
+    <input type="text" name="ProgramCode">
+
+    <label>Program Name:</label>
+    <input type="text" name="ProgramName">
+
+    <label>Duration (Years):</label>
+    <input type="number" name="Duration">
+
+    <input type="submit" value="Submit">
+</form>
+
+<div style="text-align:center;">
+    <a class="return-btn" href="index.php">Return to Home</a>
+</div>
+
+<footer>
+    &copy; 2026 Brenden Kambuka | IS312 Web Application Development
+</footer>
+
+</body>
+</html>
