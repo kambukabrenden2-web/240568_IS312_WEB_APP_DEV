@@ -1,0 +1,87 @@
+/* 
+  Student Name: Brenden Kambuka
+  Student ID: 240568
+  Date: 25/3/2026
+*/
+
+/* General body styling */
+body {
+  background-color: #f8f9fa; /* light neutral background */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2c3e50; /* dark text for readability */
+  line-height: 1.6;
+}
+
+/* Navbar styling */
+.navbar {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important; /* highlight on hover */
+}
+
+/* Hero / Jumbotron section */
+header {
+  background: linear-gradient(135deg, #e9ecef, #ffffff);
+  border-left: 5px solid #0d6efd; /* DICT-style accent */
+}
+
+/* Headings */
+h1, h3 {
+  font-weight: 600;
+}
+
+h1 {
+  color: #0d6efd; /* DICT blue */
+}
+
+h3 {
+  color: #2c3e50;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Images */
+img {
+  border-radius: 5px;
+}
+
+.rounded-circle {
+  border: 3px solid #0d6efd;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* Custom utility classes */
+.text-policy {
+  color: #0d6efd; /* DICT blue accent */
+}
+
+.bg-policy {
+  background-color: #0d6efd;
+  color: #fff;
+}
